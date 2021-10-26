@@ -160,6 +160,18 @@
 			width: 100%;
 			height: 100%;
 		}
+		.floating-button{
+            background: transparent;
+            color: #FFFFFF;
+            padding: 2px 8px;
+            position: fixed;
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+            box-shadow: transparent;
+            bottom: 20px;
+            right: 20px;
+        }
 	</style>
 	<div class="qbootstrap-hero" data-section="home">
 		<div class="qbootstrap-overlay"></div>
@@ -176,7 +188,7 @@
 								<audio id="myMusic" loop>
 									<source src="music/perfect.mp3" type="audio/mp3">
 								</audio>
-								<img src="images/pause.png" alt="" width="78" height="78" id="icon">
+								<!-- <img src="images/pause.png" alt="" width="78" height="78" id="icon"> -->
 							</div>
 						</div>
 					</div>
@@ -479,7 +491,7 @@
 			</div>
 		</div>
 	</div>
-
+    <img class="floating-button" src="images/pause.png" alt="" width="78" height="78" id="icon">  
 	<footer id="footer" role="contentinfo">
 		<div class="container">
 			<div class="row row-bottom-padded-sm">
