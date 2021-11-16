@@ -101,7 +101,7 @@
 			background-repeat:no-repeat;
 			background-size:contain;
 			background-position:center;
-			background-image: url(images/mail2.png);
+			background-image: url(images/modal1.jpeg);
 			background-size: 500px;
 			display: block;
 		}
@@ -141,7 +141,7 @@
 			}
 		}
 		.vertical-center {
-			padding: 550px 0;
+			padding:auto;
   			text-align: center;
 		}
 
@@ -170,8 +170,22 @@
             font-weight: bold;
             box-shadow: transparent;
             bottom: 20px;
-            right: 20px;
+            right: 30px;
         }
+		.button-open {
+			/* width: 150px;
+			height: 50px; */
+			border:none;
+			border:solid 2px white;
+			border-radius: 25px;
+			background: rgba(190, 47, 47, 0);
+			font-size: 12px;
+		}
+
+		.button-open:hover {
+			background:crimson;
+			color:crimson; 
+		}
 	</style>
 	<div class="qbootstrap-hero" data-section="home">
 		<div class="qbootstrap-overlay"></div>
@@ -439,10 +453,6 @@
 					<div class="col-md-12 text-center section-heading svg-sm colored">
 						<img src="images/flaticon/svg/005-two.svg" class="svg" alt="Free HTML5 Bootstrap Template by QBootstrap.com">
 						<h2>Gallery</h2>
-						<div class="row">
-						<div class="col-md-10 col-md-offset-1 subtext">
-							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
-						</div>
 					</div>
 					</div>
 				</div>
@@ -452,40 +462,28 @@
 			<div class="row">
 				<div class="col-md-3 col-sm-6">
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup image-popup" href="images/1.jpeg"><img src="images/1.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+						<a class="gallery-img image-popup image-popup" href="images/gal1.jpeg"><img src="images/gal1.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
 					</div>
+					<div class="gallery animate-box">
+						<a class="gallery-img image-popup" href="images/gal2.jpeg"><img src="images/gal2.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
 					<div class="gallery animate-box">
 						<a class="gallery-img image-popup" href="images/2.jpeg"><img src="images/2.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
 					</div>
-				</div>
-				<div class="col-md-3 col-sm-6">
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="images/cat.jpg"><img src="images/cat.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-					</div>
-					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="images/cat2.jpg"><img src="images/cat2.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-					</div>
-					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="images/cat3.jpg"><img src="images/cat3.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+						<a class="gallery-img image-popup" href="images/gal3.jpeg"><img src="images/gal3.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="images/cat4.jpg"><img src="images/cat4.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-					</div>
-					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="images/cat5.jpg"><img src="images/cat5.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-					</div>
-					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="images/cat6.jpg"><img src="images/cat6.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+						<a class="gallery-img image-popup" href="images/modal.jpeg"><img src="images/modal.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="images/cat7.jpg"><img src="images/cat7.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
-					</div>
-					<div class="gallery animate-box">
-						<a class="gallery-img image-popup" href="images/cat5.jpg"><img src="images/cat5.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
+						<a class="gallery-img image-popup" href="images/gal4.jpeg"><img src="images/gal4.jpeg" class="img-responsive" alt="Free HTML5 Bootstrap Template by QBootstrap.com"></a>
 					</div>
 				</div>
 			</div>
@@ -512,10 +510,14 @@
 		</div>
 	</footer>
 	<div class="modal modal-fullscreen fade" id="modal1" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog vertical-center">
+		<div class="modal-dialog vertical-center qbootstrap-overlay">
 		  <div class="modal-content">
 			<div class="modal-body">
-				<button type="button" id="playingM" class="btn" data-dismiss="modal" style="background-color: red; border-radius: 25px; font-size: 12px; padding-top: 15px; padding-bottom: 15px;"><i class="fa fa-heart" aria-hidden="true"></i><b style="color: #ffffff;">Buka Undangan</b></button>
+				<div class="animate-box svg-sm colored"></div>
+				<h1 class="holder" style="color: #FFFFFF; font-size: 60px; padding-top: 100px; font-family:Brush Script MT;"><span>Pernikahan</span></h1>
+				<h2 style="color: #FFFFFF; padding-top: 50px; font-size: 50px;">Rahmat Rohim <br> &amp; <br> Melliya Andriyanti</h2>
+				<p style="color: #FFFFFF; font-size: 25px;">Kamis <br> 16 . 12 . 2021</p>
+				<button type="button" id="playingM" class="btn button-open" data-dismiss="modal" ><i class="fa fa-heart" aria-hidden="true"></i><b style="color: #ffffff;">Buka Undangan</b></button>
 			</div>
 			<!-- <div class="modal-footer">
 			  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
