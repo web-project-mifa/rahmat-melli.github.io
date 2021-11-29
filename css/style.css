@@ -353,7 +353,7 @@ h6 {
 @media screen and (max-width: 768px) {
   .qbootstrap-cover,
   .video-hero {
-    heifght: inherit;
+    height: inherit;
     padding: 3em 0;
   }
 }
@@ -436,7 +436,7 @@ h6 {
 .video-hero .display-tc h2 {
   color: #fff;
   font-size: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 300 !important;
 }
 .qbootstrap-cover .display-tc h2 strong,
@@ -532,7 +532,7 @@ h6 {
   color: white;
 }
 #qbootstrap-slider-hero .flexslider .slider-text > .slider-text-inner h1 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 80px;
   line-height: 1.3;
   font-weight: 300;
@@ -686,7 +686,7 @@ h6 {
 }
 
 #qbootstrap-couple img {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -870,7 +870,7 @@ h6 {
   }
 }
 .timeline > li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
 }
 .timeline > li:before,
@@ -994,7 +994,7 @@ h6 {
 
 .date {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -1197,7 +1197,7 @@ h6 {
 }
 
 .groom-men img {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
