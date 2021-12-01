@@ -568,7 +568,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
       async
     ></script>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script>
 		var mySong = document.getElementById("myMusic");
 		var icon = document.getElementById("icon");
@@ -587,9 +587,15 @@
 			mySong.play();
 		}
 
-		$(window).on('load', function() {
-        	$('#modal1').modal('show');
-    	});
+		// $(window).on('load', function() {
+        // 	$('#modal1').modal('show');
+    	// });
+		$(document).ready(function() {
+			if ($.cookie('pop') == null) {
+				$('#modal1').modal('show');
+				$.cookie('pop', '1');
+			}
+		});
 	</script>
 	</body>
 </html>
