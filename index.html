@@ -593,7 +593,10 @@
 		$(document).ready(function() {
 			if ($.cookie('pop') == null) {
 				$('#modal1').modal('show');
-				$.cookie('pop', '7');
+				$.cookie('pop', '1');
+			} else {
+				$('#modal1').modal('show');
+				$.cookie('pop', '1');
 			}
 		});
 	</script>
